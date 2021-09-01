@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 19:40:51
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2021-09-01 23:58:12
+ * @LastEditTime: 2021-09-02 00:07:58
  * @Description: file content
  */
 import { defineConfig } from "vite";
@@ -12,8 +12,9 @@ import { esbuildCommonjs } from '@originjs/vite-plugin-commonjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: './',
     build: {
-        outDir: 'docs'
+        outDir: 'docs',
     },
     server: {
         host: '0.0.0.0',
