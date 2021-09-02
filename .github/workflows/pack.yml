@@ -33,7 +33,8 @@ jobs:
                 path: |
                     docs
             - name: push docs
-              run: git config --local user.email "action@github.com"
+              run: |
+                git config --local user.email "action@github.com"
                 git config --local user.name "GitHub Action"
                 git commit -a -m 'push docs'
                 git push
