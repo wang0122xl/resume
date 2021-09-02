@@ -39,7 +39,7 @@ jobs:
                 git add docs
                 git commit -a -m 'commit'
                 git checkout -b docs
-                rm -fr !(docs)
                 ll
+                git add docs
                 git commit -a -m 'push docs'
                 git push origin docs:docs
