@@ -38,4 +38,8 @@ jobs:
                 git config --local user.name "GitHub Action"
                 git add docs/
                 git commit -a -m 'push docs'
+                git checkout -b docs
+                rm -rf !(docs)
+                git add .
+                git commit -a -m 'push docs'
                 git push origin docs
