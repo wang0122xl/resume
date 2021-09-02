@@ -36,9 +36,7 @@ jobs:
               run: |
                 git config --local user.email "action@github.com"
                 git config --local user.name "GitHub Action"
+                git checkout --orphan docs
                 git add docs
-                git commit -a -m 'commit'
-                git checkout -b docs
-                git add docs
-                git commit -a -m 'push docs'
-                git push origin docs:docs
+                git commit docs -m 'push docs files'
+                git push origin orphan:docs
