@@ -32,3 +32,7 @@ jobs:
                 name: docs
                 path: |
                     docs
+            - name: push docs
+              with:
+                repo-token: ${{ secrets.GITHUB_TOKEN }}
+              run: git commit -a -m 'push docs' & git push
