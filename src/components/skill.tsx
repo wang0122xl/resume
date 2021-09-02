@@ -2,7 +2,7 @@
  * @Date: 2021-09-01 23:26:36
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2021-09-02 14:09:41
+ * @LastEditTime: 2021-09-02 17:50:37
  * @Description: file content
  */
 
@@ -18,7 +18,7 @@ const Skill = () => {
             <p>熟练使用Nodejs，可承担部分服务端开发工作</p>
             <p>熟练使用Linux系统，熟悉Nginx常用配置</p>
             <p>熟悉Docker</p>
-            <p>熟练使用git管理代码</p>
+            <p>熟练使用Git管理代码</p>
         </section>
         </>
     )
