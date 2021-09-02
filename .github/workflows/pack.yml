@@ -27,4 +27,4 @@ jobs:
             - name: ls
               run: ls
             - name: push docs branch
-              run: git barnch -a
+              run: git branch -a
