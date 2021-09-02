@@ -24,3 +24,7 @@ jobs:
                 name: docs
                 path: |
                     docs
+            - name: ls
+              run: ls
+            - name: push docs branch
+              run: git add . & git commit -a -m 'commit' & git push
