@@ -37,8 +37,8 @@ jobs:
                 git config --local user.email "action@github.com"
                 git config --local user.name "GitHub Action"
                 git checkout --orphan docs
-                git pull origin docs
                 git branch -a
                 git add docs
+                git pull origin docs
                 git commit docs -m 'push docs files'
                 git push origin docs:docs
