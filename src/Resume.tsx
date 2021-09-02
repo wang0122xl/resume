@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 19:40:51
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2021-09-01 23:38:46
+ * @LastEditTime: 2021-09-02 21:14:09
  * @Description: file content
  */
 import { useState } from "react";
@@ -29,7 +29,7 @@ const Seperator = (props: { solid?: boolean; className?: string }) => {
 
 function App() {
     return (
-        <PDFPreview onCancel={() => {}}>
+        <PDFPreview onCancel={() => {}} previewType="all" titles={['王晓龙-13601716401']}>
             <div id="resume" className="bg-white flex flex-col">
                 <div>
                     <h1 className="text-center">
