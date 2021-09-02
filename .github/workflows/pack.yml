@@ -39,6 +39,5 @@ jobs:
                 git checkout --orphan docs
                 git branch -a
                 git add docs
-                git pull origin docs
                 git commit docs -m 'push docs files'
-                git push origin docs:docs
+                git push origin docs:docs --force
