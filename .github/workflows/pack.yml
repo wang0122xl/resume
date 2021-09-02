@@ -40,4 +40,4 @@ jobs:
                 git branch -a
                 git add docs
                 git commit docs -m 'push docs files'
-                git push origin orphan:docs
+                git push origin docs:docs
