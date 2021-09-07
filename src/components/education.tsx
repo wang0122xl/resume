@@ -17,6 +17,7 @@ const Education = () => {
             </p>
             <p>电子信息工程</p>
         </div>
+        <p>CET-6</p>
         </>
     )
 }
