@@ -47,11 +47,14 @@ p > span {
 }
 
 .seperator {
-    height: 0;
+    height: 2px;
     width: 100%;
-    border-bottom: 1px dashed #999;
+    border-top: 1px dashed #999;
     transform: scaleY(0.5);
     margin: 25px 0;
+}
+.seperator.solid {
+    border-top: 1px solid #999;
 }
 
 section {
