@@ -1,43 +1,37 @@
-name: pack
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
 
 on:
-    push:
-        branches: [master]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        
-        steps:
-            - uses: actions/checkout@v2
-            - name: use node
-              uses: actions/setup-node@v1
-              with:
-                  node-version: '14.x'
-            - name: cache node_modules
-              uses: actions/cache@v2
-              with:
-                path: ~/.npm
-                key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn.lock') }}
-                restore-keys: |
-                    ${{ runner.OS }}-node-
-                    ${{ runner.OS }}-
-            - name: install dependencies
-              run: yarn
-            - name: build
-              run: yarn build
-            # - name: archive artifacts
-            #   uses: actions/upload-artifact@v2
-            #   with:
-            #     name: docs
-            #     path: |
-            #         docs
-            - name: push docs
-              run: |
-                git config --local user.email "action@github.com"
-                git config --local user.name "GitHub Action"
-                git checkout --orphan docs
-                git branch -a
-                git add docs
-                git commit docs -m 'push docs files'
-                git push origin docs:docs --force
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.15.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - run: corepack enable
+    - run: yarn
+    - run: yarn build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
