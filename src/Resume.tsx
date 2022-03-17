@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 19:40:51
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2022-03-17 16:55:51
+ * @LastEditTime: 2022-03-17 17:00:10
  * @Description: file content
  */
 import { useState } from "react";
@@ -55,11 +55,10 @@ function App() {
 
     const doDownload = async () => {
         const pdf = await _getPdf()
-        pdf.save('test')
+        pdf.save('王晓龙-13601716401.pdf')
     }
 
     return (
-        // <PDFPreview onCancel={() => {}} previewType="all" titles={['王晓龙-13601716401']}>
         <div id="print-container">
             <div id="resume" className="print-layer a4">
                 <div className="mt-10px mb-10px">
@@ -92,7 +91,6 @@ function App() {
                 <button onClick={doPrint}>打印</button>
             </div>
         </div>
-        // </PDFPreview>
     );
 }
 
