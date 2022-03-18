@@ -612,10 +612,10 @@ electron-to-chromium@^1.3.811:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.824.tgz#9f85cc826c70b12180009d461e3b19c8121a56d2"
   integrity sha512-Fk+5aD0HDi9i9ZKt9n2VPOZO1dQy7PV++hz2wJ/KIn+CvVfu4fny39squHtyVDPuHNuoJGAZIbuReEklqYIqfA==
 
-element-to-pdf@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/element-to-pdf/-/element-to-pdf-1.0.3.tgz#c6048d19e5ae9939897c1430de798aff8c0cb4d5"
-  integrity sha512-EA20Dq4nKG2+MyZOtcYetyClBAXLNu/bNu+Tmp7orapAdi7R/UToUnynafM3CIzdZXK3cDgBrEYemgVIvaGI7Q==
+element-to-pdf@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/element-to-pdf/-/element-to-pdf-1.0.4.tgz#50ca72eb68db1d36cc2dc6f9109a305ad4793245"
+  integrity sha512-vyorTnnM8N9Ai2POCPAo4DLjDDu5ke+iFKIFj3cT4NVwYC0eJzhKuIJQdBdIuhiSajaQUcJ5q/JK2NE6ahql8Q==
   dependencies:
     html-to-image "^1.6.2"
     jspdf "^2.5.1"

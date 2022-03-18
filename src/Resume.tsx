@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 19:40:51
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2022-03-17 17:00:10
+ * @LastEditTime: 2022-03-18 13:16:10
  * @Description: file content
  */
 import { useState } from "react";
@@ -28,7 +28,7 @@ const Seperator = (props: { solid?: boolean, className?: string }) => {
 function App() {
     const _getPdf = async () => {
         const domToPdf = new ElementToPdf()
-        const { pdf } = await domToPdf.transformToPdf({
+        const res = await domToPdf.transformToPdf({
             element: document.getElementById('resume')! as HTMLDivElement,
             padding: [0, 10, 5, 10],
             lastElementAsFooter: false,
@@ -40,22 +40,17 @@ function App() {
                     .text(`第${currentPage}页`, pdf.internal.pageSize.getWidth() - 17, pdf.internal.pageSize.getHeight() - 1)
             },
         })
-        return pdf
+        return res
     }
 
     const doPrint = async () => {
-        const pdf = await _getPdf()
-            const w = window.open()!
-            const iframe = document.createElement('iframe')
-            iframe.hidden = true
-            iframe.src = URL.createObjectURL(pdf.output('blob'))
-             w.document.body.appendChild(iframe)
-            iframe.contentWindow?.print()
+        const res = await _getPdf()
+        res.doPrint()
     }
 
     const doDownload = async () => {
-        const pdf = await _getPdf()
-        pdf.save('王晓龙-13601716401.pdf')
+        const res = await _getPdf()
+        res.pdf.save('王晓龙-13601716401.pdf')
     }
 
     return (
