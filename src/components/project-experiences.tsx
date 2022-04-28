@@ -2,7 +2,7 @@
  * @Date: 2021-09-01 21:27:02
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2021-09-02 21:25:36
+ * @LastEditTime: 2022-04-28 18:15:03
  * @Description: file content
  */
 
@@ -10,6 +10,19 @@ const ProjectExperience = () => {
     return (
         <>
         <h2>项目经验</h2>
+
+        <h3>宠医PACS系统(React)</h3>
+        <p className="mb-10px">
+            <span>项目描述</span>
+            PACS系统是实验室影像系统解决方案，旨在提高院内影像流程的信息化和自动化。简化、标准化医生的影像设备操作流程，提高相关工作效率
+        </p>
+        <p><span>项目成绩：</span></p>
+        <section>
+            <p>作为主程独立负责项目从0-1的技术选型调研，框架搭建，最佳实践示例及核心阅片模块的开发</p>
+            <p>基于cornerstone实现的dicom文件在线阅片、标注、保存功能</p>
+            <p>基于p5js、seadragon、p5tools实现的超大图片在线阅片、标注、裁剪截图功能</p>
+            <p>基于webworker实现的高性能多文件上传管理，支持文件、任务的暂停、失败重试，大文件分片上传等功能</p>
+        </section>
 
         <h3>宠物LIS/LIMS系统(React)</h3>
         <p className="mb-10px">
