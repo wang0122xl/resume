@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 19:40:51
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2022-03-18 13:16:10
+ * @LastEditTime: 2023-03-10 17:19:42
  * @Description: file content
  */
 import { useState } from "react";
@@ -59,7 +59,7 @@ function App() {
                 <div className="mt-10px mb-10px">
                     <h1 className="text-center">
                         王晓龙
-                        <span className="text-[0.75em]"> -- 前端工程师</span>
+                        <span className="text-[0.75em]"> -- 前端高级工程师</span>
                     </h1>
                     <Seperator solid className="!mt-[-10px]" />
                 </div>

@@ -2,7 +2,7 @@
  * @Date: 2021-09-01 21:27:02
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2022-04-28 18:15:03
+ * @LastEditTime: 2023-03-10 17:49:11
  * @Description: file content
  */
 
@@ -21,7 +21,7 @@ const ProjectExperience = () => {
             <p>作为主程独立负责项目从0-1的技术选型调研，框架搭建，最佳实践示例及核心阅片模块的开发</p>
             <p>基于cornerstone实现的dicom文件在线阅片、标注、保存功能</p>
             <p>基于p5js、seadragon、p5tools实现的超大图片在线阅片、标注、裁剪截图功能</p>
-            <p>基于webworker实现的高性能多文件上传管理，支持文件、任务的暂停、失败重试，大文件分片上传等功能</p>
+            <p>基于webworker，结合proxy特性实现的高性能多文件上传管理，支持文件/任务的暂停、失败重试、最大并发任务数、大文件分片上传等功能</p>
         </section>
 
         <h3>宠物LIS/LIMS系统(React)</h3>
@@ -32,9 +32,8 @@ const ProjectExperience = () => {
         <p><span>项目成绩：</span></p>
         <section>
             <p>采用yarn workspance + lerna方案管理组织代码，既保证了基础组件，底层工具及发布流程的高复用性，又确保了两个项目业务逻辑互相分离</p>
-            <p>与硬件工程师现场调试，基于http / socket方式与工作站通信，下发实验请求，上报实验结果</p>
             <p>独立负责LIMS核心模块-数据录入公式自动计算结果(mathjs)，及LIS所有模块开发</p>
-            <p>为满足LIS / LIMS的个性化报告打印和下载需求，独立开发了基于 dom-to-image 和 jsPdf 的 html 页面打印方案并开源至公司组件库</p>
+            <p>为满足LIS / LIMS的个性化报告打印和下载需求，独立开发了基于 dom-to-image 和 jsPdf 的 html 打印方案（element-to-pdf），其余项目的pdf打印功能也都使用此库实现，大大加快项目开发进度</p>
         </section>
 
         <h3>实验室图像采集H5(React + Koa)</h3>
@@ -49,16 +48,14 @@ const ProjectExperience = () => {
             <p>项目较低复杂度下，独立开发大大降低了沟通成本，使项目得以快速落地投产</p>
         </section>
 
-        <h3>长为健康小程序(Taro + h5)</h3>
+        <h3>LIMS送检小程序(Taro + React h5)</h3>
         <p className="mb-10px">
             <span>项目描述</span>
-            长为健康小程序是长为健康的ToC产品，内含便便日记，胃肠道问卷，健康问答，饮食打卡四大模块，全方位记录用户各项健康指标并提供专业的健康建议。
+            LIMS送检小程序是针对有送检需求的医院开发的一款送检流程线上化的小程序。包含线上下单，物流提醒，线上支付、企业月付，数据实时推送等实用功能。
         </p>
         <p><span>项目成绩：</span></p>
         <section>
-            <p>项目整体使用 Taro-React ，其中饮食打卡模块采取小程序内嵌Vue H5方案以加快开发进度</p>
-            <p>采取服务端渲染的方式实现了小程序内生成海报并截图分享的功能</p>
-            <p>基于 vue-router + transition 开发了v-r-transition-plugin 插件，实现了vue-router push / back的仿app动画效果，并额外扩展present及dismiss方法以区分不同的业务跳转，提高用户体验</p>
+            <p>项目整体使用 Taro 原生小程序内嵌React h5 方案。其中支付、在线查看报告使用原生页面，其余业务均采用h5页面加快研发速度</p>
         </section>
 
         <h3>商宴通(iOS + react-native)</h3>
