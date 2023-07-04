@@ -2,7 +2,7 @@
  * @Date: 2021-08-31 21:03:52
  * @Author: wang0122xl@163.com
  * @LastEditors: wang0122xl@163.com
- * @LastEditTime: 2023-03-10 17:27:49
+ * @LastEditTime: 2023-07-04 10:11:18
  * @Description: file content
  */
 
@@ -14,7 +14,7 @@ const WorkExperience = () => {
             <div className="flex mb-5px">
             <p className="mr-100px">
                     <span>公司：</span>
-                    上海逐玥科技有限公司
+                    上海逐玥科技有限公司（新瑞鹏）
                 </p>
                 <p>
                     <span>职位：</span>
