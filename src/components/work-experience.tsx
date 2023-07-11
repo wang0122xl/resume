@@ -10,11 +10,11 @@ const WorkExperience = () => {
     return (
         <>
             <h2>工作经历</h2>
-            <h3>2022.07 - 至今</h3>
+            <h3>2020.04 - 至今</h3>
             <div className="flex mb-5px">
             <p className="mr-100px">
                     <span>公司：</span>
-                    上海逐玥科技有限公司（新瑞鹏）
+                    新瑞鹏宠物医疗集团
                 </p>
                 <p>
                     <span>职位：</span>
@@ -23,25 +23,8 @@ const WorkExperience = () => {
             </div>
             <h4>工作职责</h4>
             <section>
-                <p>负责团队内前端工作的推进执行</p>
-                <p>负责引导公司开源组件库及工具库的开发、维护工作</p>
-            </section>
-
-            <h3>2020.04 - 2022.07</h3>
-            <div className="flex mb-5px">
-            <p className="mr-100px">
-                    <span>公司：</span>
-                    上海长为数据技术有限公司
-                </p>
-                <p>
-                    <span>职位：</span>
-                    前端开发工程师
-                </p>
-            </div>
-            <h4>工作职责</h4>
-            <section>
-                <p>负责公司前端项目的需求分析，技术选型，代码实现及部署调优任务</p>
-                <p>负责引导公司开源组件库及工具库的开发、维护工作</p>
+                <p>>负责公司前端项目的需求分析，技术选型，代码实现及部署调优任务</p>
+                <p>负责引导集团内部开源组件库及工具库的研发、维护工作</p>
                 <p>负责部分服务端开发工作(nodejs)，加快项目落地速度</p>
             </section>
 
