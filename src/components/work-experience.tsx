@@ -10,6 +10,25 @@ const WorkExperience = () => {
     return (
         <>
             <h2>工作经历</h2>
+            <h3>2023.08 - 至今</h3>
+            <div className="flex mb-5px">
+            <p className="mr-100px">
+                    <span>公司：</span>
+                    上海万得基金销售有限公司
+                </p>
+                <p>
+                    <span>职位：</span>
+                    前台开发
+                </p>
+            </div>
+            <h4>工作职责</h4>
+            <section>
+                <p>负责公司产品的iOS客户端、web及小程序的开发、迭代、自测工作</p>
+                <p>负责客户端协议的制定、调试及文档维护</p>
+                <p>负责万得基金app核心用例的自动化测试脚本的开发、维护</p>
+                <p>配合集团部分营销活动页面的开发</p>
+            </section>
+
             <h3>2020.04 - 2023.08</h3>
             <div className="flex mb-5px">
             <p className="mr-100px">

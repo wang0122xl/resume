@@ -12,8 +12,8 @@ const Evaluation = () => {
         <h2>自我评价</h2>
         <section>
             <p>native, web, hybrid 均可独立完成项目开发</p>
-            <p>学习、抗压能力极强</p>
-            <p>轻度代码洁癖，对代码质量有严格的要求</p>
+            <p>认真负责，学习、抗压能力强</p>
+            <p>拥抱AI</p>
         </section>
         </>
     )
