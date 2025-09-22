@@ -10,7 +10,7 @@ const WorkExperience = () => {
     return (
         <>
             <h2>工作经历</h2>
-            <h3>2020.04 - 至今</h3>
+            <h3>2020.04 - 2023.08</h3>
             <div className="flex mb-5px">
             <p className="mr-100px">
                     <span>公司：</span>
