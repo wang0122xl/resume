@@ -59,7 +59,7 @@ const ProjectExperience = () => {
         <section>
             <p>采用yarn workspance + lerna方案管理组织代码，既保证了基础组件，底层工具及发布流程的高复用性，又确保了两个项目业务逻辑互相分离</p>
             <p>独立负责LIMS核心模块-数据录入公式自动计算结果(mathjs)，及LIS所有模块开发</p>
-            <p>为满足LIS / LIMS的个性化报告打印和下载需求，开发了基于 dom-to-image 和 jsPdf 的 html 打印方案element-to-pdf，（https://www.npmjs.com/package/element-to-pdf），后续的pdf生成/打印/下载需求可快速集成</p>
+            <p>为满足LIS / LIMS的个性化报告打印和下载需求，开发了基于 dom-to-image 和 jsPdf 的 html 打印方案element-to-pdf（https://www.npmjs.com/package/element-to-pdf），后续的pdf生成/打印/下载需求可快速集成</p>
         </section>
 
         <h3>实验室图像采集H5(React + Koa)</h3>
