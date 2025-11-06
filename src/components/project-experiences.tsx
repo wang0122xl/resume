@@ -33,9 +33,8 @@ const ProjectExperience = () => {
         </p>
         <p><span>项目成绩：</span></p>
         <section>
-            <p>主要负责项目投研模块的开发、维护工作，保障迭代计划</p>
-            <p>优化项目中的通用图表组件，提升组件的可复用性和可扩展性</p>
-            <p>使用jenkins构建脚本将部署升级的耗时缩短1/3</p>
+            <p>负责项目投研模块的开发、维护工作，保障迭代计划</p>
+            <p>主导了项目中wind-ui组件库的平稳渐进升级，通过自定义webpack loader解决双版本共存时的样式冲突问题</p>
         </section>
 
         <h3>宠医PACS系统(React)</h3>
@@ -60,7 +59,7 @@ const ProjectExperience = () => {
         <section>
             <p>采用yarn workspance + lerna方案管理组织代码，既保证了基础组件，底层工具及发布流程的高复用性，又确保了两个项目业务逻辑互相分离</p>
             <p>独立负责LIMS核心模块-数据录入公式自动计算结果(mathjs)，及LIS所有模块开发</p>
-            <p>为满足LIS / LIMS的个性化报告打印和下载需求，独立开发了基于 dom-to-image 和 jsPdf 的 html 打印方案（element-to-pdf），其余项目的pdf打印功能也都使用此库快速实现</p>
+            <p>为满足LIS / LIMS的个性化报告打印和下载需求，开发了基于 dom-to-image 和 jsPdf 的 html 打印方案element-to-pdf，（https://www.npmjs.com/package/element-to-pdf），后续的pdf生成/打印/下载需求可快速集成</p>
         </section>
 
         <h3>实验室图像采集H5(React + Koa)</h3>
