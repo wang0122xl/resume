@@ -10,7 +10,6 @@ const Skill = () => {
     return (
         <>
         <h2>专业技能</h2>
-        <section>
             <p>熟练掌握 html、javascript/typescript、css。可独立负责前端项目开发(WEB, H5, 小程序，原生iOS)</p>
             <p>熟练掌握 React、Vue 等常用前端框架, 与其相应的配套开发库</p>
             <p>熟练使用前端开发构建工具 Webpack/Vite, 及常用优化方案 </p>
@@ -20,7 +19,6 @@ const Skill = () => {
             <p>熟练使用Linux系统，熟悉Nginx常用配置</p>
             <p>熟练掌握CI/CD相关技能</p>
             <p>熟练使用Git、SVN代码管理工具</p>
-        </section>
         </>
     )
 }
